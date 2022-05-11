@@ -50,9 +50,10 @@ Describe your project
 
 ## :sparkles: Features ##
 
-:heavy_check_mark: Feature 1;\
-:heavy_check_mark: Feature 2;\
-:heavy_check_mark: Feature 3;
+:heavy_check_mark: design Pattern;\
+:heavy_check_mark: implamentation Prisma orm;\
+:heavy_check_mark: implementation Docker ;\
+:heavy_check_mark: testing ;
 
 ## :rocket: Technologies ##
 
@@ -63,7 +64,7 @@ The following tools were used in this project:
 
 ## :white_check_mark: Requirements ##
 
-Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed.
+Before starting :checkered_flag:, you need to have [Git](https://git-scm.com), [Docker](https://www.docker.com/),[Docker-compose](https://docs.docker.com/compose/) and [Node](https://nodejs.org/en/) installed.
 
 ## :checkered_flag: Starting ##
 
@@ -84,6 +85,9 @@ $ make up
 
 # Run the project in development
 $ npm run dev
+
+# Run test
+$ npm run test
 
 
 # The server will initialize in the <http://localhost:{{your server port}}>
