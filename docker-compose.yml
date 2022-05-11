@@ -1,0 +1,13 @@
+version: '3.2'
+
+services:
+
+  postgres:
+    image: postgres
+    container_name: api-npj
+    restart: always
+    ports:
+      - ${DB_PORT}:5432
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASS}
