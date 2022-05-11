@@ -4,13 +4,17 @@ import { ProductPrismaRepository } from "./repositories/ProductPrismaRepository"
 
 class ProductController {
   async create(request: Request, response: Response) {
-    const { body } = request;
-    const prismaRepository = new ProductPrismaRepository();
-    const createProductService = new CreateProductService(prismaRepository);
+    try {
+      const { body } = request;
+      const prismaRepository = new ProductPrismaRepository();
+      const createProductService = new CreateProductService(prismaRepository);
 
-    const result = await createProductService.execute(body);
+      const result = await createProductService.execute(body);
 
-    return response.json(result);
+      return response.json(result);
+    } catch (err: any) {
+      response.status(401).json({error: err.message,});
+    }
   }
 }
 
