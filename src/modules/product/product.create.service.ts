@@ -9,7 +9,7 @@ class CreateProductService {
 
     if(product) {
       // se existir da um erro
-      throw new Error('Produto já existe')
+      throw new Error('Produto já cadastrado')
     }
 
     // se nao , deixar salvar
