@@ -1,5 +1,5 @@
 <div align="center" id="top"> 
-  <img src="./.github/app.gif" alt="Api Npj Dl" />
+  <!-- <img src="./.github/app.gif" alt="Api Npj Dl" /> -->
 
   &#xa0;
 
@@ -26,9 +26,9 @@
 
 <!-- Status -->
 
-<h4 align="center"> 
+<!-- <h4 align="center"> 
 	🚧  Api Npj Dl 🚀 Under construction...  🚧
-</h4> 
+</h4>  -->
 
 <hr>
 
@@ -78,7 +78,7 @@ $ cd api-npj-dl
 # Install dependencies
 $ npm i
 
-# rename .env.example to .env and isert your information
+# rename .env.example to .env and isert your information, delete example {{}}
 
 # create container docker to db
 $ make up
